@@ -1,0 +1,356 @@
+:root{
+    --HoverColor:rgb(247, 168, 168);
+    --PrimaryColor:#f11118;
+    --paleGreen:hsl(96, 75%, 89%);
+    --whiteColor:hsl(0, 0%, 100%);
+    --blackColor: ☐ hsl(0, 0%, 18%);
+    --textColor: hsl(240, 1%, 48%);
+    --bgColor: hsl(220, 10%, 94%);
+    --greyText: rgb(199, 190, 190);
+    --inputColor: hsl(330, 12%, 97%);
+    --inputColor: ;
+
+    --biggestFontSize: 2.5rem;
+    --h1FontSize: 1.5rem;
+    --h2FontSize: 1.25rem;
+    --h3FontSize: 1rem;
+    --normalFontSize: 0.938rem;
+    --smallFontSize: .813rem;
+    --smallestFontSize: .75rem;
+}
+
+
+.topSection{
+    .headerSection{
+        justify-content:space-between;
+
+        .title{
+            h1{
+                font-size:50px;
+                color:rgba(243, 27, 27, 0.879);
+                font-weight: 700;
+                padding-bottom: 5%;
+            }
+    
+            p{
+                font-size: var(--h1FontSize);
+                color: var(--textColor);
+                font-weight: 500;
+                padding-right: 15%;
+            }
+        }
+
+        .Searchbar{
+            padding: 1rem 2rem ;
+            background: var(--HoverColor);
+            border-radius: 5px;
+            gap: 1rem;
+            box-shadow: 0 2p 4px var(--inputColor);
+
+            input{
+                border:none;
+                outline: none;
+                background: none;
+                text-decoration: color(white);
+
+            }
+
+            .icon{
+                color: var(--textColor);
+                &:hover{
+                    color: white;
+                }
+            }
+
+        }
+
+        .adminDiv{
+            gap: 1rem;
+
+            .icon{
+                font-size: var(--biggestFontSize);
+                background: var(--HoverColor);
+                border-radius: 5px;
+                padding: 5px;
+                box-shadow: 0 2px 4px var(--inputColor);
+                color: var(--textColor);
+                &:hover{
+                    color: white;
+                }
+            }
+
+            .adminpic
+            {
+                border:3px solid var(--HoverColor);
+                border-radius: 40px;
+                width: 2.5rem;
+                overflow: hidden;
+                box-shadow: 0 2px 4px var(--inputColor);
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+
+    .CardSection {
+        margin-top: 3rem;
+        gap: 1rem;
+    
+        /* Assuming parent container */
+        display: flex; /* or 'display: grid;' depending on your layout needs */
+        justify-content: space-between; /* Adjust to align items as needed */
+        align-items: flex-start; /* Align items as per requirement */
+    }
+    
+    /* .rightCard style */
+    .rightCard {
+        position: relative;
+        flex-basis: 70%; /* Adjust based on the width you want */
+        width: 300px; /* You can also set 'width' based on design */
+        flex-direction: column;
+        align-items: flex-start;
+        margin: auto;
+        padding: 2rem;
+        border-radius: 1rem;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    /* If the parent container is a flex container, you can also use */
+    .CardSection > .rightCard {
+        margin-left: auto; /* This will push it to the right if needed */
+    }
+    
+    .videoDiv {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    
+    h1, p, .btn {
+        z-index: 100;
+    }
+    
+    h1 {
+        font-size: var(--h1FontSize);
+        color: var(--whiteColor);
+        font-weight: 800;
+    }
+    
+    p {
+        padding: 1rem;
+        color: var(--whiteColor);
+        font-weight: 500;
+    }
+    
+    .buttons {
+        gap: 1rem;
+    
+        .btn {
+            box-shadow: none;
+            padding: .8rem 1.5rem;
+            color: var(--PrimaryColor);
+            border: 2px solid transparent;
+        }
+    
+        .transparent {
+            background: none;
+            border: 2px solid var(--whiteColor);
+            color: var(--whiteColor);
+    
+            &:hover {
+                background: var(--HoverColor);
+                color: var(--whiteColor);
+            }
+        }
+    }
+    
+            h1, p, .btn{
+                z-index: 100;
+            }
+            h1{
+                font-size: var(--h1FontSize);
+                color: var(--whiteColor);
+                font-weight: 800;
+
+            }
+
+            p{
+                padding:1rem;
+                color: var(--whiteColor);
+                font-weight: 500;
+            }
+
+            .buttons{
+                gap: 1rem;
+
+                .btn{
+                    box-shadow: none;
+                    padding: .8rem 1.5rem;
+                    color: var(--PrimaryColor);
+                    border: 2px solid transparent;
+                }
+
+                .transparent{
+                    background:none;
+                    border: 2px solid var(--whiteColor);
+                    color: var(--whiteColor);
+
+                    &:hover{
+                        background: var(--HoverColor);
+                        color: var(--whiteColor);
+                    }
+                }
+            }
+
+
+         
+        }
+        
+        .leftCard{
+            flex-basis: 50%;
+            .main1{
+                position: relative;
+                padding: 1rem;
+                height: 200px;
+                border-radius: 1rem;
+                justify-content: space-between;
+
+                &::before
+                {
+                    content: '';
+                    position: absolute;
+                    height: 100%;
+                    width: 75%;
+                    background: var(--HoverColor);
+                    left:0;
+                    bottom: 0;
+                    border-radius: 1rem ;
+                
+                }
+                .textDiv{
+                    z-index: 100;
+
+                    h1{
+                        font-size: var(--h1FontSize);
+                        padding-bottom: 1rem;
+                        color: var(--blackColor);
+
+                    }
+                    .flex{
+                        gap: 1.5rem;
+                        font-weight: 500;
+                        color: var(--blackColor);
+
+                        small{
+                            font-size: var(--normalFontSize);
+                            display: block;
+                            color: var(--PrimaryColor);
+                            font-weight: 500;
+                            padding: .5rem 0;
+
+                        }
+                    }
+
+                    .link{
+                        margin-top: 2rem;
+                        cursor: pointer;
+                        &:hover{
+                            color: var(--PrimaryColor);
+                            .icon{
+                                transform: translateX(10px);
+                                transition: .3s case;
+                            }
+                        }
+                    }
+                }
+
+                .imgDiv{
+                    transform: translateY(-20px);
+                    img{
+                        width: 105%;
+                    }
+                }
+            }
+        }
+    
+    
+
+       
+@media screen and (max-width: 990px){
+    .cardSection{
+        flex-direction: column;
+
+        .rightCard{
+            width:100;
+            flex-basis: 100%;
+        }
+    }
+}
+
+@media screen and (max-width:918px){
+    .headerSection{
+        .Searchbar{
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width:712px){
+    .headerSection{
+        .adminDiv{
+            display:none;
+        }
+
+        .title{
+            text-align: center;
+            margin: auto;
+        }
+
+    }
+    .CardSection{
+        .rightCard{
+        text-align: center;
+
+        .buttons{
+            margin: auto;
+            flex-direction: column;
+
+            .btn{
+                width: 100%;
+            }
+        }
+    }
+    }
+}
+
+@media screen and (max-width:390px){
+    .topSection{
+        .CardSection{
+            .rightCard{
+                text-align: center;
+                padding: 2rem 1rem;
+
+                h1{
+                    font-size:var(--h2FontSize)
+                }
+            }
+        }
+    }
+}

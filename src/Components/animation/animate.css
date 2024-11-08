@@ -1,0 +1,8 @@
+.animationContainer {
+  cursor: pointer;
+  max-width: 100px;
+  margin-right: 0.5rem;
+  background: var(--inputColor);
+  border-radius: 50px;
+  padding: 0.2rem;
+}/*# sourceMappingURL=animate.css.map */
