@@ -1,0 +1,289 @@
+@charset "UTF-8";
+:root {
+  --HoverColor:rgb(247, 168, 168);
+  --PrimaryColor:#f11118;
+  --paleGreen:hsl(96, 75%, 89%);
+  --whiteColor:hsl(0, 0%, 100%);
+  --blackColor: ☐ hsl(0, 0%, 18%);
+  --textColor: hsl(240, 1%, 48%);
+  --bgColor: hsl(220, 10%, 94%);
+  --greyText: rgb(199, 190, 190);
+  --inputColor: hsl(330, 12%, 97%);
+  --inputColor: ;
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.5rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: .813rem;
+  --smallestFontSize: .75rem;
+}
+
+.topSection {
+  /* .rightCard style */
+  /* If the parent container is a flex container, you can also use */
+}
+.topSection .headerSection {
+  justify-content: space-between;
+}
+.topSection .headerSection .title h1 {
+  font-size: 50px;
+  color: rgba(243, 27, 27, 0.879);
+  font-weight: 700;
+  padding-bottom: 5%;
+}
+.topSection .headerSection .title p {
+  font-size: var(--h1FontSize);
+  color: var(--textColor);
+  font-weight: 500;
+  padding-right: 15%;
+}
+.topSection .headerSection .Searchbar {
+  padding: 1rem 2rem;
+  background: var(--HoverColor);
+  border-radius: 5px;
+  gap: 1rem;
+  box-shadow: 0 2p 4px var(--inputColor);
+}
+.topSection .headerSection .Searchbar input {
+  border: none;
+  outline: none;
+  background: none;
+  -webkit-text-decoration: color(white);
+          text-decoration: color(white);
+}
+.topSection .headerSection .Searchbar .icon {
+  color: var(--textColor);
+}
+.topSection .headerSection .Searchbar .icon:hover {
+  color: white;
+}
+.topSection .headerSection .adminDiv {
+  gap: 1rem;
+}
+.topSection .headerSection .adminDiv .icon {
+  font-size: var(--biggestFontSize);
+  background: var(--HoverColor);
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 0 2px 4px var(--inputColor);
+  color: var(--textColor);
+}
+.topSection .headerSection .adminDiv .icon:hover {
+  color: white;
+}
+.topSection .headerSection .adminDiv .adminpic {
+  border: 3px solid var(--HoverColor);
+  border-radius: 40px;
+  width: 2.5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 4px var(--inputColor);
+}
+.topSection .headerSection .adminDiv .adminpic img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.topSection .CardSection {
+  margin-top: 3rem;
+  gap: 1rem;
+  /* Assuming parent container */
+  display: flex; /* or 'display: grid;' depending on your layout needs */
+  justify-content: space-between; /* Adjust to align items as needed */
+  align-items: flex-start; /* Align items as per requirement */
+}
+.topSection .rightCard {
+  position: relative;
+  flex-basis: 70%; /* Adjust based on the width you want */
+  width: 300px; /* You can also set 'width' based on design */
+  flex-direction: column;
+  align-items: flex-start;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.topSection .CardSection > .rightCard {
+  margin-left: auto; /* This will push it to the right if needed */
+}
+.topSection .videoDiv {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.topSection .videoDiv video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.topSection h1, .topSection p, .topSection .btn {
+  z-index: 100;
+}
+.topSection h1 {
+  font-size: var(--h1FontSize);
+  color: var(--whiteColor);
+  font-weight: 800;
+}
+.topSection p {
+  padding: 1rem;
+  color: var(--whiteColor);
+  font-weight: 500;
+}
+.topSection .buttons {
+  gap: 1rem;
+}
+.topSection .buttons .btn {
+  box-shadow: none;
+  padding: 0.8rem 1.5rem;
+  color: var(--PrimaryColor);
+  border: 2px solid transparent;
+}
+.topSection .buttons .transparent {
+  background: none;
+  border: 2px solid var(--whiteColor);
+  color: var(--whiteColor);
+}
+.topSection .buttons .transparent:hover {
+  background: var(--HoverColor);
+  color: var(--whiteColor);
+}
+.topSection h1, .topSection p, .topSection .btn {
+  z-index: 100;
+}
+.topSection h1 {
+  font-size: var(--h1FontSize);
+  color: var(--whiteColor);
+  font-weight: 800;
+}
+.topSection p {
+  padding: 1rem;
+  color: var(--whiteColor);
+  font-weight: 500;
+}
+.topSection .buttons {
+  gap: 1rem;
+}
+.topSection .buttons .btn {
+  box-shadow: none;
+  padding: 0.8rem 1.5rem;
+  color: var(--PrimaryColor);
+  border: 2px solid transparent;
+}
+.topSection .buttons .transparent {
+  background: none;
+  border: 2px solid var(--whiteColor);
+  color: var(--whiteColor);
+}
+.topSection .buttons .transparent:hover {
+  background: var(--HoverColor);
+  color: var(--whiteColor);
+}
+
+.leftCard {
+  flex-basis: 50%;
+}
+.leftCard .main1 {
+  position: relative;
+  padding: 1rem;
+  height: 200px;
+  border-radius: 1rem;
+  justify-content: space-between;
+}
+.leftCard .main1::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 75%;
+  background: var(--HoverColor);
+  left: 0;
+  bottom: 0;
+  border-radius: 1rem;
+}
+.leftCard .main1 .textDiv {
+  z-index: 100;
+}
+.leftCard .main1 .textDiv h1 {
+  font-size: var(--h1FontSize);
+  padding-bottom: 1rem;
+  color: var(--blackColor);
+}
+.leftCard .main1 .textDiv .flex {
+  gap: 1.5rem;
+  font-weight: 500;
+  color: var(--blackColor);
+}
+.leftCard .main1 .textDiv .flex small {
+  font-size: var(--normalFontSize);
+  display: block;
+  color: var(--PrimaryColor);
+  font-weight: 500;
+  padding: 0.5rem 0;
+}
+.leftCard .main1 .textDiv .link {
+  margin-top: 2rem;
+  cursor: pointer;
+}
+.leftCard .main1 .textDiv .link:hover {
+  color: var(--PrimaryColor);
+}
+.leftCard .main1 .textDiv .link:hover .icon {
+  transform: translateX(10px);
+  transition: 0.3s case;
+}
+.leftCard .main1 .imgDiv {
+  transform: translateY(-20px);
+}
+.leftCard .main1 .imgDiv img {
+  width: 105%;
+}
+
+@media screen and (max-width: 990px) {
+  .cardSection {
+    flex-direction: column;
+  }
+  .cardSection .rightCard {
+    width: 100;
+    flex-basis: 100%;
+  }
+}
+@media screen and (max-width: 918px) {
+  .headerSection .Searchbar {
+    display: none;
+  }
+}
+@media screen and (max-width: 712px) {
+  .headerSection .adminDiv {
+    display: none;
+  }
+  .headerSection .title {
+    text-align: center;
+    margin: auto;
+  }
+  .CardSection .rightCard {
+    text-align: center;
+  }
+  .CardSection .rightCard .buttons {
+    margin: auto;
+    flex-direction: column;
+  }
+  .CardSection .rightCard .buttons .btn {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 390px) {
+  .topSection .CardSection .rightCard {
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+  .topSection .CardSection .rightCard h1 {
+    font-size: var(--h2FontSize);
+  }
+}/*# sourceMappingURL=top.css.map */
